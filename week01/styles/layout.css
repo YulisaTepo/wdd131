@@ -6,7 +6,7 @@ verde: #6acfc7
 .grid {
     margin: 2px;
     display: grid;
-    grid-template: auto auto auto auto;
+    grid-template: auto auto auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
