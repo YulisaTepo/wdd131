@@ -3,7 +3,7 @@
 
 body {
     font-family: "nanum-myeongjo";
-    width: 100%;
+    width: 99%;
 }
 
 header {
@@ -11,27 +11,27 @@ header {
     color: black;
     text-align: center;
     padding-top: 5px;
+    border-radius: 20px;
 }
+
 
 nav {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: #fae9c8;
     padding: 8px;
     justify-content: space-around;
 }
 
 nav a {
     text-decoration: none;
-    color: #F0A500;
-    background-color: black;
-    font-size: 20px;
+    color: black;
+    font-size: 24px;
 }
 
 nav :hover {
-    color: #F0A500;
-    font-size: 22px;
-    text-shadow: 0 0 10px #fbc252;
+    color: black;
+    text-shadow: 0 0 10px black;
     border-radius: 6px;
     padding: 4px;
 }
@@ -41,6 +41,8 @@ footer {
     text-align: center;
     font-size: 20px;
     padding: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 main {
@@ -56,14 +58,18 @@ main {
 main h2 {
     background-color: #fbc252;
     padding: 5px;
+    /* border-top: 2px solid black;
+    border-top-left-radius: 5px; */
 }
 
 section {
     border-radius: 20px;
     margin: 20px;
-    border: 2px solid black;
+    /* border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black; */
     background-color: #ffffff;
-    box-shadow: 10px 10px 5px rgb(223, 223, 223);
+    box-shadow: 10px 10px 10px 5px rgb(223, 223, 223);
     place-items: center;
 
 }
@@ -73,6 +79,7 @@ section {
     max-width: 170px;
     max-height: 210px;
     margin: 20px;
+    box-shadow: 5px 10px 10px 5px rgba(223, 223, 223, 0.26);
 }
 
 #flag {
@@ -80,7 +87,9 @@ section {
     max-width: 220px;
     max-height: 220px;
     margin: 20px;
+    box-shadow: 5px 10px 10px 5px rgba(223, 223, 223, 0.466);
 }
+
 main p {
     max-width: 500px;
 }
@@ -100,17 +109,18 @@ main p {
     margin-top: 100px;
     color: #000000;
 }
+
 .list a {
     color: black;
     text-decoration: none;
 }
-.list a :hover {
+
+.list :hover {
     color: #F0A500;
     text-shadow: 0 0 25px #fbc252;
     font-size: 20px;
 }
 
-#lastModified {
-    color: #000000;
-    font-size: 22px;
+h3{
+    font-size: 25px;
 }
