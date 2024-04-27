@@ -1,4 +1,4 @@
-/* Colors, fonts, flex on the navigation, hover design, limited width on the main and use grid on it as well. */
+/* Colors, fonts, flex on the navigation, hover design, limited width on the main and use grid on it as well.*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Nanum+Myeongjo&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Signika:wght@300&display=swap');
 
 body {
@@ -19,7 +19,6 @@ nav {
     background-color: black;
     padding: 8px;
     justify-content: space-around;
-
 }
 
 nav a {
@@ -43,6 +42,7 @@ footer {
     font-size: 20px;
     padding: 5px;
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,24 +64,25 @@ section {
     border: 2px solid black;
     background-color: #ffffff;
     box-shadow: 10px 10px 5px rgb(223, 223, 223);
-
 }
+
 #foto {
     border-radius: 10px;
     width: 170px;
     margin: 20px;
-
 }
+
 #flag {
     border-radius: 10px;
     width: 220px;
     margin: 20px;
 }
+
 .flex {
     font-size: 19px;
     display: flex;
     justify-content: center;
-    text-align:justify;
+    text-align: justify;
     margin: 20px;
 }
 
@@ -93,6 +94,6 @@ section {
 }
 
 #lastModified {
-color: #000000;
-font-size: 22px;
+    color: #000000;
+    font-size: 22px;
 }
