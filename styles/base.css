@@ -1,0 +1,99 @@
+/* Colors, fonts, flex on the navigation, hover design, limited width on the main and use grid on it as well. */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Nanum+Myeongjo&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Signika:wght@300&display=swap');
+
+body {
+    font-family: "nanum-myeongjo";
+    width: 100%;
+}
+
+header {
+    background-color: #F0A500;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 8px;
+    justify-content: space-around;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #F0A500;
+    background-color: black;
+    font-size: 20px;
+}
+
+nav :hover {
+    color: #F0A500;
+    font-size: 22px;
+    text-shadow: 0 0 10px #fbc252;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+footer {
+    background-color: #fbc252;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main h2 {
+    background-color: #fbc252;
+    padding: 5px;
+}
+
+section {
+    border-radius: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 5px rgb(223, 223, 223);
+
+}
+#foto {
+    border-radius: 10px;
+    width: 170px;
+    margin: 20px;
+
+    box-shadow: 5px black;
+}
+#flag {
+    border-radius: 10px;
+    width: 220px;
+    margin: 20px;
+}
+.flex {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    text-align:justify;
+    margin: 20px;
+}
+
+.list {
+    text-align: justify;
+    margin: 20px;
+    font-size: 19px;
+    margin-top: 100px;
+}
+
+#lastModified {
+color: #000000;
+font-size: 22px;
+}

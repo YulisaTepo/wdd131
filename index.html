@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Yulisa Tepo</title>
+    <meta name="author" content="Yulisa Tepo">
+    <meta name="descriptiom" content="WDD 131 - Dynamic Web Fundamentals | Yulisa Tepo Cubas | Home Page About Me">
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
-    <h1>Yulisa A. Tepo Cubas | WDD131</h1>
+    <header>
+        <h1>
+            WDD 131: Dynamic Web Fundamentals - Yulisa Tepo Cubas
+        </h1>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byui.instructure.com/.">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="flex">
+                <p>My name is Yulisa Tepo, I'm 19 years old, online student of BYU-Idaho. I was born in Cajamarca, Peru,
+                    and recently I moved to Santiago, Chile. I like to learn asian lenguages as Korean and Japanese, I
+                    also enjoy participating in church's activities and try to spent time with my family. I have a
+                    nepthew that I love as a son, and want to success in my studies to be self-relience and support my
+                    family.</p>
+                <img id="foto" src="images/foto-perfil.jpeg" alt="Photo">
+            </div>
+
+            <h3>Cajamarca, Peru</h3>
+            <div class="flex">
+                <img id="flag" src="images/peru-flag.jpeg" alt="Peru Flag">
+                <p>Cajamarca is a city located in the north of Peru, the city is known for being rich in mining and
+                    dairy products.
+                    Although Cajamarca does attract many tourists, the most popular time of the year to visit is
+                    February because Carnival takes place throughout this month. Carnival sparks many celebrations,
+                    parades, festivals, parties, and, most importantly, water and shaving cream fights. Peruvians and
+                    tourists alike hunt each other down with water balloons and aerosol cans filled with shaving cream,
+                    which creates a fun and exciting adventure every day during the month of February!</p>
+            </div>
+
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="list">
+                <li>MDN Web Docs</li>
+                <li>W3 Schools</li>
+                <li>GeeksforGeeks</li>
+                <li>Stack Overflow</li>
+                <li>CSS-Tricks</li>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Yulisa A. Tepo Cubas | Perú</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
