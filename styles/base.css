@@ -1,6 +1,5 @@
 /* Colors, fonts, flex on the navigation, hover design, limited width on the main and use grid on it as well.*/
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Nanum+Myeongjo&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Signika:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bebas+Neue&family=Nanum+Myeongjo&family=Orbitron:wght@500&family=Oswald&family=Permanent+Marker&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Signika&display=swap');
 body {
     font-family: "nanum-myeongjo";
     width: 99%;
@@ -29,13 +28,13 @@ nav a {
     font-size: 24px;
 }
 
-nav a :hover {
+nav :hover {
     color: black;
     text-shadow: 0 0 10px black;
     border-radius: 6px;
     padding: 4px;
 }
-nav :hover {
+nav a :hover {
     color: black;
     text-shadow: 0 0 10px black;
     border-radius: 6px;
