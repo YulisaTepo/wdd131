@@ -1,4 +1,30 @@
 @media (min-width: 640px) {
+
+    /* Show the menu and hamburger button on smaller screens */
+    .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+    /* Additional styles for the menu */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+
     body {
         width: 100%;
         min-width: 200px;
@@ -29,6 +55,7 @@
         color: black;
         padding: 4px;
     }
+
     a:hover {
         color: black;
     }
