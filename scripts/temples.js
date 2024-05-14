@@ -1,8 +1,7 @@
-function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
-    }
-}
+const nav = document.querySelector("#nav")
+const open = document.querySelector("#open")
+const close = document.querySelector("#close")
+
+open.addEventListener("click", () => {
+    nav.classList.add("visible");
+})

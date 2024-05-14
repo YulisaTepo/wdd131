@@ -11,28 +11,42 @@
     <link rel="stylesheet" href="styles/temples.css">
     <script src="scripts/temples.js"></script>
     <script defer src="scripts/getdates.js"></script>
+    
 </head>
 
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <div class="title"><a href="#">Temple Album</a></div>
+            <button id="open" class="open-menu">Open</button>
+            <nav class="nav-bar" id="nav">
+                <button id="close" class="close-menu">Close</button>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div class="toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="36"
+                    height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div> -->
     </header>
     <main>
-        <section>
+        <div class="section">
             <h2>
                 Home
             </h2>
-            <div>
+            <div class="grid">
                 <figure><img src="images/Trujillo-Peru-Temple.jpg" alt="temple">
                     <figcaption>Trujillo, Peru Temple</figcaption>
                 </figure>
@@ -61,11 +75,7 @@
                     <figcaption>Trujillo, Peru Temple</figcaption>
                 </figure>
             </div>
-
-
-        </section>
-
-
+        </div>
     </main>
     <footer class="footer">
         <p>© <span id="currentyear"></span> Yulisa A. Tepo Cubas | Perú</p>
