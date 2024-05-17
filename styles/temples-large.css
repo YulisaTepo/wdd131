@@ -7,7 +7,6 @@
 
 body {
     height: 100vh;
-    position: center;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -33,7 +32,6 @@ a {
 
 .links a:hover {
     font-weight: bold;
-    scale: 1.05;
     border-bottom: 2px solid black;
     color: black;
 }
@@ -63,6 +61,7 @@ header {
 
 h2 {
     color: black;
+    margin: 10px;
 }
 
 .nav-bar .links {
@@ -77,6 +76,7 @@ main {
     text-align: center;
     max-width: 800px;
     place-content: center;
+    margin-bottom: 50px;
 }
 
 footer {
