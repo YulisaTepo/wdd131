@@ -59,10 +59,10 @@ header {
     color: black;
 }
 
-h1 {
+h2, h1 {
     color: black;
     margin: 10px;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .nav-bar .links {
