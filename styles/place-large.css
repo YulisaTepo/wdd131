@@ -1,3 +1,8 @@
+:root {
+    --clr-primary-1: rgb(206, 25, 25);
+    --clr-primary-2: rgba(202, 10, 10, 0.849);
+}
+
 .main-image {
     width: 100%;
 
@@ -7,12 +12,18 @@
     display: flex;
     justify-content: center;
     background-color: rgb(206, 25, 25);
-    height: 70px;
-    padding: 5px;
+    height: 80px;
     border-bottom: 20px solid white;
     /* border-bottom: 20px solid white;
     box-shadow: 10px 5px 30px black; */
 
+}
+
+h1 {
+    width: 280px;
+    font-size: 30px;
+    height: 30px;
+    top: 0px;
 }
 
 .h1 {
@@ -21,9 +32,8 @@
     font-size: 30px;
     color: white;
     margin: 13px;
-    padding: 3px;
     width: 280px;
-    height: 40px;
+    height: 55px;
     text-align: center;
     border: 3px solid white;
     border-radius: 5px;
@@ -48,20 +58,17 @@ main {
 
 .data {
     position: absolute;
-    text-align: 10px;
     top: 150px;
     left: 60px;
     background-color: rgba(255, 255, 255, 0.541);
     width: 250px;
     text-align: center;
-    justify-items: auto;
 }
 
 .weather {
     background-color: rgba(255, 255, 255, 0.541);
     width: 250px;
     text-align: center;
-    justify-items: auto;
 }
 
 h2 {
@@ -81,6 +88,28 @@ h2 {
     right: 90px;
 }
 
+span[data-descr] {
+    position: relative;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+    font-family: 'Times New Roman', Times, serif;
+    content: attr(data-descr);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.904);
+    padding: 12px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;
+}
 
 
 footer {
@@ -89,4 +118,8 @@ footer {
     padding: 6px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.weather-short {
+    display: none;
 }

@@ -2,25 +2,29 @@
     .short {
         width: 100%;
     }
-
     main {
         display: grid;
         justify-content: center;
         text-align: center;
     }
-
     .data {
-
         position: initial;
         margin: 20px;
     }
-
     .weather {
+        display: none;
+    }
+    .weather-short {
+        display: block;
         margin: 20px;
         position: initial;
-
+        background-color: rgba(255, 255, 255, 0.541);
+        width: 250px;
+        text-align: center;
     }
-
+    .weather-short img {
+        width: 140px;
+    }
 }
 
 @media (max-width: 1000px) {

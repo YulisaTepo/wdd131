@@ -3,3 +3,5 @@ function calculateWindChill(temperature, windSpeed) {
 }
 let windChill = calculateWindChill(17, 8);
 document.querySelector("#wind-chill").textContent = parseFloat(windChill).toFixed(2);
+
+//In  my case the temperature is greater than 10°C, that's why I'll not call this function. 
