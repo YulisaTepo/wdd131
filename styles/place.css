@@ -1,0 +1,34 @@
+@media (max-width: 700px) {
+    .short {
+        width: 100%;
+    }
+
+    main {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .data {
+
+        position: initial;
+        margin: 20px;
+    }
+
+    .weather {
+        margin: 20px;
+        position: initial;
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .medium {
+        width: 100%;
+    }
+
+    .weather {
+        top: 750px;
+    }
+}

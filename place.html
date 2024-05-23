@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="h1" href="#">Peru</a>
+        </div>
+    </header>
+
+    <picture>
+        <source class="short" media="(max-width: 700px)" srcset="images/peru-short.jpg">
+        <source class="medium" media="(max-width: 1000px)" srcset="images/peru-medium.jpg" />
+        <img class="main-image" src="images/peru-large.jpg" alt="">
+    </picture>
+
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 1'285,215.6 km2</p>
+            <p><strong>Population:</strong> 34,352,720 (2023)</p>
+            <p><strong>Capital:</strong> Lima</p>
+            <p><strong>Languages:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Peruvian sol (PEN)</p>
+            <p><strong>Time Zone:</strong> UTC-5(PET)</p>
+            <p><strong>Calling Code:</strong> +51</p>
+            <p><strong>Internet TLD:</strong> .pe</p>
+        </section>
+        <section class="weather">
+            <h2>Weather <img class="cloud" src="images/cloud-icon.png" alt="Cloud Icon"></h2>
+            <p><strong>Temperature:</strong> 17°C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> 8km/h</p>
+            <p><strong>Wind Chill: </strong><span id="wind-chill"></span>°C</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="currentyear"></span> Yulisa A. Tepo Cubas | Perú</p>
+        <p><strong>Last modified:</strong> <span  id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
