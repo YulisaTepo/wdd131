@@ -1,0 +1,19 @@
+:root {
+    --clr-primary-1: rgb(41, 68, 190);
+    --clr-primary-2: rgb(89, 103, 109);
+    --clr-secondary-1: rgb(255, 255, 255); 
+
+    --font: "Cambria";
+}   
+
+body {
+    font-family: var(--font);
+
+}
+strong {
+    color: var(--clr-primary-1);
+
+}
+p {
+    color: var(--clr-primary-2);
+}
