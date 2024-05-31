@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.links a {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    color: black;
+    font-size: 17px;
+}
+
+.links a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: #e7dfc2;
+    padding-top: 15px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+h2, h1 {
+    color: black;
+    margin: 10px;
+    font-size: 26px;
+}
+h3 {
+    padding: 5px;
+    text-decoration: 1px underline;
+    text-align: center;
+}
+
+.nav-bar .links {
+    cursor: pointer;
+    display: flex;
+    gap: 2rem;
+}
+
+
+main {
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    place-content: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    color: black;
+    grid-column: 1/3;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #e7dfc2;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+}
+
+img {
+    width: 200px;
+    height: 140px;
+    padding: 8px;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: white;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+.dropdown-menu.open {
+    height: 240px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-menu {
+    display: none;
+}
+.nav-bar .close-menu {
+    display: none;
+}
+
+section {
+    background-color: #e7dfc244;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+}
