@@ -16,12 +16,10 @@
 
         let counter = parseInt(localStorage.getItem('formCounter'));
         if (counter !== 0) {
-            // If not, initialize it to 0
             document.querySelector(".reviews").textContent = counter;
         }
         counter++;
         localStorage.setItem('formCounter', counter);
-
     </script>
 </body>
 
