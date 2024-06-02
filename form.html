@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review assignment for BYU-Idaho">
+    <meta name="author" content="Yulisa Tepo Cubas">
+    <title>Form Activity</title>
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <form id="form" method="get" action="review.html">
+            <h1>Product Review</h1>
+            <fieldset>
+                <legend>Product Name*</legend>
+                <label>
+                    <select name="products" id="products" required>
+                        <option value="" disabled selected>Select a Product</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating*</legend>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation* </legend>
+                <label><input type="date" id="date" name="date" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find useful in the product? <br>(Check all that apply)</legend>
+                <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="ease">Ease of use</label>
+                <label><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" id="desing" name="features" value="desing">Desing</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional) </legend>
+
+                <label> <textarea id="review" name="review"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name (Optional)</legend>
+                <label><input type="text" id="name" name="name"></label>
+
+            </fieldset>
+            <input id="button" type="submit" value="Post Review">
+            <p>* Indicates a required field</p>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>© <span id="currentyear"></span> Yulisa A. Tepo Cubas | Perú</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

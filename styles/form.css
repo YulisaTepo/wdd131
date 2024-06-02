@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+    #form {
+        max-width: 300px;
+    }
+
+    
+    input {
+        font-size: 20px;
+    }
+
+}

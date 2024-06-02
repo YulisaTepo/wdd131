@@ -1,0 +1,123 @@
+/* stars */
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+
+body {
+    display: grid;
+}
+
+legend {
+    display: block;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+footer {
+    color: black;
+    grid-column: 1/3;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #e7dfc2;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #86806aea;
+    border-radius: 5px;
+    max-width: 480px;
+padding: 10px;
+}
+
+#form {
+    justify-content: center;
+    
+    max-width: 480px;
+    border-radius: 10px;
+    align-content: center;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#form fieldset {
+    border-radius: 5px;
+    margin: 8px;
+}
+
+select {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#button {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: black;
+    background-color: #86806aea;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+label {
+    margin-top: 8px;
+}
+
+select {
+    border-radius: 5px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form {
+    width: 400px; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
