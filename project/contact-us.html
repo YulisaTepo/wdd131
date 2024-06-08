@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravan Web Site</title>
+    <meta name="description" content="This is a web site project for BYU-Idaho about a winter shop named Caravan.">
+    <meta name="author" content="Yulisa A. Tepo Cubas">
+    <link rel="stylesheet" href="caravan-large.css">
+    <link rel="stylesheet" href="caravan.css">
+    <script defer src="caravan.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Caravan <br>Shop</h1>
+        </div>
+        <h2 class="slang">Lo mejor en productos para el invierno</h2>
+        <nav class="links">
+            <a href="caravan-project.html">Sobre Nosotros</a>
+            <a href="products.html">Productos</a>
+            <a href="#">Contáctanos</a>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    
+    <div>
+        <h2>¡Estemos en contacto!</h2>
+<!--         ejemplo
+ -->        <form id="form" method="get" action="connected.html">
+            <h1>Indícanos cómo contactarte:</h1>
+            <fieldset>
+                <label>Nombres*
+                    <input type="text">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend></legend>
+                <label>Gmail* <input type="text"></label>
+
+            </fieldset>
+
+            <fieldset>
+                <label>Número de Whatsapp: <input type="tel" id="tel" name="tel"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Producto en el que estás interesado (Marca todo lo que aplique): </legend>
+                <label><input type="checkbox" id="durability" name="features" value="durability">Gorros</label>
+                <label><input type="checkbox" id="ease" name="features" value="ease">Bufandas</label>
+                <label><input type="checkbox" id="performance" name="features" value="performance">Cuellos</label>
+                <label><input type="checkbox" id="desing" name="features" value="desing">Guantes</label>
+
+            </fieldset>
+            
+            <input id="button" type="submit" value="Post Review">
+            <p>* Indicates a required field</p>
+        </form>
+
+        
+    </div>
+    <footer class="footer">
+        <p>© <span id="currentyear"></span> Yulisa A. Tepo Cubas | Perú</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

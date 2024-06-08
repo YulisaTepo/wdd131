@@ -1,0 +1,33 @@
+@media (max-width: 680px) {
+    * {
+        max-width: 300px;
+    }
+    .innerLinks {
+        display: block;
+        grid-gap: 20px;
+        margin: 10px;
+        justify-content: space-between;
+    }
+    .slang {
+        display: none;
+    }
+    header {
+        display: block;
+    }
+    
+    li {
+        margin-bottom: 20px;
+
+    }
+    section .product-nav {
+        margin-top: 20px;
+    }
+    .product-nav {
+        margin-top: 110px
+    }
+    header a{
+        margin-top: 50px;
+        background-color: red;
+        
+    }
+}
